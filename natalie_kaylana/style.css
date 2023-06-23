@@ -1,0 +1,19 @@
+.menu{
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    background-color: lightblue;
+}
+
+.conteudo{
+    margin-left: 150px;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
