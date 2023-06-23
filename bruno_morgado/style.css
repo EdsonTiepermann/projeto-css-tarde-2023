@@ -1,0 +1,75 @@
+.container {
+  display: grid;
+  gap: 10px;
+  background-color: black;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "section2 section1 section1 section1"
+    "footer footer footer footer";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  gap: 10px;
+  padding: 10px;
+  background-size: 100% 100%;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  background-color: aqua;
+}
+.nav {
+  grid-area: nav;
+  padding: 20px;
+  font-size: 30px;
+  background-color: aqua;
+}
+
+.section1 {
+  grid-area: section1;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  height: 300px;
+}
+.section2 {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  background-color: aqua;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: red;
+}
