@@ -13,8 +13,10 @@
     }
     
     header {
-      background-color: black;
-      color: #fff;
+      border: 10px solid rgb(49, 239, 6);
+      box-shadow: rgb(2, 147, 2);
+      background-color: rgba(31, 29, 59, 0.93);
+      color:rgb(49, 239, 6);
       padding: 20px;
       text-align: center;
     }
@@ -25,20 +27,35 @@
     }
     
     .portfolio {
+      height: 500px;
+      color: rgb(47, 255, 0);
+      border: 10px solid  rgb(42, 212, 4);
+      background-color:rgba(31, 29, 59, 0.93) ;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-wrap: wrap ;
+      justify-content: left;
     }
     
     .portfolio-item {
-      width: 300px;
+      font-size: 21px;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      width: 350px;
+      height: 300px;
       margin: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s;
+      transition: transform 0.3s ;
+      box-shadow:0px 9px 30px rgb(9, 240, 9);
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      /* transition: transform 0.3s; */
+    }
+    .portfolio-item2 {
+      
     }
     
     .portfolio-item:hover {
       transform: translateY(-5px);
+      cursor: pointer;
     }
     
    
@@ -54,10 +71,22 @@
   
     <div class="portfolio">
     <div class="portfolio-item">
+    <div class="portfolio-item2"></div>
     <div class="overlay">
     <div class="overlay-content">
-          <h3>Projeto 1</h3>
-          <p>Descrição do projeto 1</p>
+          <h3>Sobre mim</h3>
+          <!-- <details>
+            <summary>Sobre mim</summary>
+          </details>
+          <details>
+            <summary>contato</summary>
+          </details>
+          <details>
+            <summary>Escolaridade</summary>
+          </details>
+          <details>
+            <summary>Projetos pessoais</summary>
+          </details> -->
     </div>
     </div>
     </div>
@@ -65,8 +94,8 @@
     <div class="portfolio-item">
     <div class="overlay">
     <div class="overlay-content">
-          <h3>cabeçalho</h3>
-          <p>Descrição do projeto 2</p>
+          <h3>contato</h3>
+          <p></p>
         </div>
     </div>
     </div>
