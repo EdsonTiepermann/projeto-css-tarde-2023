@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho da página -->
+  <header>
+    <nav>
+      <!-- Menu de navegação responsivo -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main>
+    <section id="home">
+      <!-- Imagem de destaque -->
+      <img src="imagem.jpg" alt="Imagem de destaque">
+      <!-- Título e texto de introdução -->
+      <h1>Bem-vindo à minha Landing Page</h1>
+      <p>Esta é uma página de exemplo criada com um estilo semelhante ao site da Apple.</p>
+    </section>
+
+    <section id="sobre">
+      <!-- Título e texto sobre a empresa/produto/serviço -->
+      <h2>Sobre nós</h2>
+      <p>Somos uma empresa especializada em criar soluções incríveis para nossos clientes.</p>
+    </section>
+
+    <section id="contato">
+      <!-- Formulário de contato -->
+      <h2>Entre em contato conosco</h2>
+      <form action="enviar.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>&copy; Minha Empresa - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
