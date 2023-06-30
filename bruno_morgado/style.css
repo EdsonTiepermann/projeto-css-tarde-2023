@@ -6,10 +6,8 @@
     "header header header header"
     "nav nav nav nav"
     "section2 section1 section1 section1"
+    "main item item item"
     "footer footer footer footer";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  gap: 10px;
   padding: 10px;
   background-size: 100% 100%;
 }
@@ -19,13 +17,31 @@
   text-align: center;
   padding: 20px;
   font-size: 30px;
-  background-color: aqua;
+  color: brown;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .nav {
   grid-area: nav;
   padding: 20px;
   font-size: 30px;
-  background-color: aqua;
+  color: aqua;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.main {
+  grid-area: main;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  height: 300px;
+}
+.item {
+  grid-area: item;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  height: 300px;
 }
 
 .section1 {
@@ -34,12 +50,12 @@
   text-align: center;
   padding: 50px;
   font-size: 30px;
-  height: 300px;
+  height: 200px;
 }
 .section2 {
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -48,7 +64,7 @@
   text-align: center;
   padding: 20px;
   font-size: 30px;
-  background-color: aqua;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 ul {
@@ -56,7 +72,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
 }
 
 li {
@@ -72,4 +87,36 @@ li a {
 }
 li a:hover {
   background-color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    gap: 10px;
+    background-color: red;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "section2 section1 section1 section1"
+      "main item item item"
+      "footer footer footer footer";
+    padding: 10px;
+    background-size: 100% 100%;
+  }
+
+  .header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: beige;
+  }
+
+  .section2 {
+    text-align: center;
+    width: 100px;
+    height: 00px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }
