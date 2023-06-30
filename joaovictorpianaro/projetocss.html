@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
         .item1 {
             grid-area: apresentaçao;
         }
@@ -33,9 +34,12 @@
                 'escolaridade eventos cursos'
                 'planos planos planos';
             gap: 20px;
-            background-color: white;
+
             padding: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background: linear-gradient(to bottom, midnightblue, purple, black);
+
         }
 
         .grid-container>div {
@@ -46,6 +50,9 @@
             padding: 20px;
             transition: transform 0.3s ease;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            font-family: 'Courier Prime', monospace;
+
         }
 
         .grid-container>div:hover {
@@ -72,10 +79,8 @@
             }
         }
 
-        @media screen and (max-width: 436px) {
-            .grid-container>div {
-                width: 100%;
-            }
+        body {
+            background-color: black;
         }
     </style>
 </head>
