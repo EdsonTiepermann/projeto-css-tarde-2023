@@ -22,20 +22,64 @@
         }
 
         body {
-            background-color: #ff0000;
+            background-color: #000000;
         }
 
         h1 {
-            background-color: rgb(0, 0, 0);
+
             color: #ff0000;
         }
 
         p {
-            background-color: rgb(0, 0, 0);
+
             color: #ff0000;
         }
 
-      
+        p::first-letter {
+            color: #ddf508;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #f40000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #3e3a3a;
+            color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100px px;
+            gap: 10px;
+            background-color: rgba(122, 0, 0, 0.445);
+            padding: 10px;
+            color: #00f73a;
+        }
+
+        .grid-container>div {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .container-img {
+
+            max-width: 200px;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,35 +91,71 @@
 
     <nav class="solid">
         <ol class="container-nav">
-            <li> <a href></a>
-            <li> <a href></a>
-            <li> <a href></a>
+            <li> <a href="#APRESENTACAO">APRESENTAÇÃO</a>
+            <li> <a href="#PROJETOS">PROJETOS</a>
+            <li> <a href="#historia">HISTÓRIA</a>
+            <li>  <a href=""></a>
         </ol>
     </nav>
     </a>
 
-    <h1>APRESENTAÇÃO</h1>
-    <p>
-        Meu nome é João Felipe, tenho 13 anos sou mesatenista a 2 anos, curso programação e tenho pais
-        separados.Vou falar sobre a minha carreira no Tênis de mesa, começei em 2021 e continuo até
-        hoje.Participei do jem e 2 torneios e hoje dia 23/06/2023 daqui a 9 dias vou jogar na arena multiuso
-        pelo colégio Sepam.
+    <div class="grid-container">
+        <div class="grid-item item1" id="APRESENTACAO">1
+            <p>
+                Meu nome é João Felipe, tenho 13 anos sou mesatenista a 2 anos, curso programação e tenho pais
+                separados.Vou falar sobre a minha carreira no Tênis de mesa, começei em 2021 e continuo até
+                hoje.Participei do jem e 2 torneios e hoje dia 30/06/2023 daqui a 2 dias vou jogar na arena multiuso
+                pelo colégio Sepam.
+            </p>
+        </div>
+
+        <div class="grid-item item2">2
+            <p>Meus contatos são:Email:joaodecarvalhopradk@gmail.com. Número:999162-1552</p>
+        </div>
+
+
+        <div class="grid-item header">3
+            <p>Sou estudante do colégio Sepam a 3 anos estou no 8° ano e minhas matérias favoritas são: história e
+                matemática.</p>
+        </div>
+
+        <div class="grid item navegacao" id="PROJETOS">4
+            <p>Meus projetos futuros são:comprar um computador(de preferencia notebook) potente, passar de
+                ano(importante)
+                me dedicar mais no tênis de mesa(lazer).</p>
+        </div>
+    </div>
+
+    <h1 id="historia">HISTÓRIA</h1>
+    <p>Nasci no dia 24/05/2010, meu nome completo é João Felipe de carvalho do Prado, tenho pais separados minha
+        guarda e de minha irmã são compartilhadas e temos liberdade de escolhermos onde ficar.
+        Desde pequeno gostava bastante da área de computação, hoje faço um curso de programação na odonto excellence
+        com ótimos professores e tenho bons colegas ao meu lado.
+        Sou muito curioso sobre desastres que aconteceram na história do mundo(como o Titanic e o 11 de setembro).
+        Nunca passei necessidade na vida nem os meus pais.
+       Minhas bandas favoritas são: Guns n Roses e Hoovaranas.
+       E por fim tenho 3 gatos.
     </p>
 
+    <div class="grid-container">
+        <div class="grid-item item1" >1
+            <img src="unnamed.png" width="450" height="205">
+              
+        </div>
 
-    <h1>CONTATO</h1>
-    <p>Meus contatos são:Email:joaodecarvalhopradk@gmail.com. Número:999162-1552</p>
+        <div class="grid-item item2">2
+           
+        </div>
 
 
-    <h1>ESCOLARIDADE</h1>
-    <p>Sou estudande do colégio Sepam a 3 anos estou no 8° ano e minhas matérias favoritas são: história e
-        matemática.</p>
+        <div class="grid-item header">3
+            
+        </div>
 
-    <h1>PROJETOS PESSOAIS</h1>
-    <p>Meus projetos futuros são:comprar um computador(de preferencia notebook) potente, passar de
-        ano(importante)
-        me dedicar mais no tênis de mesa(lazer).</p>
-
+        <div class="grid item navegacao" >4
+            
+        </div>
+    </div>
 
 </body>
 
