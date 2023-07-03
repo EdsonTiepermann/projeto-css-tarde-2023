@@ -10,8 +10,7 @@
 body{
     background-color: azure;
     font-style: oblique;
-
-
+/* background-image: url(Sem\ título.jpg); */
 }
 
 header{
@@ -19,7 +18,6 @@ header{
     font-size: 20px;
     /* border: 1px lightblue solid; */
     background-color: lightblue;
-
 }
 
 
@@ -94,7 +92,7 @@ h2{
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: center;
-    height: 150px;
+    height: 230px;
 
 }
 .item6{
@@ -103,7 +101,7 @@ h2{
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: center;
-    height: 150px;
+    height: 230px;
 }
 .item7{
     font-size: larger;
@@ -116,10 +114,19 @@ h2{
 .item8{
     font-size: larger;
     border: 3px solid lightblue;
+    background-color: black;
+    color: lightblue;
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: center;
-    height: 150px;
+    height: 300px;
+}
+
+img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
 }
 
 footer{
