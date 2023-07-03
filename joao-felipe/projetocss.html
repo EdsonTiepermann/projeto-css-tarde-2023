@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+main
+    <style>
+        header {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 30px;
+            color: #ff0000;
+        }
+
+
+        .header {
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .navegacao {
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        body {
+            background-color: #000000;
+        }
+
+        h1 {
+
+            color: #ff0000;
+        }
+
+        p {
+
+            color: #ff0000;
+        }
+
+        p::first-letter {
+            color: #ddf508;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #f40000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #3e3a3a;
+            color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100px px;
+            gap: 10px;
+            background-color: rgba(122, 0, 0, 0.445);
+            padding: 10px;
+            color: #00f73a;
+        }
+
+        .grid-container>div {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .container-img {
+
+            max-width: 200px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>João Felipe</header>
+
+    <nav class="solid">
+        <ol class="container-nav">
+            <li> <a href="#APRESENTACAO">APRESENTAÇÃO</a>
+            <li> <a href="#PROJETOS">PROJETOS</a>
+            <li> <a href="#historia">HISTÓRIA</a>
+            <li>  <a href=""></a>
+        </ol>
+    </nav>
+    </a>
+
+    <div class="grid-container">
+        <div class="grid-item item1" id="APRESENTACAO">1
+            <p>
+                Meu nome é João Felipe, tenho 13 anos sou mesatenista a 2 anos, curso programação e tenho pais
+                separados.Vou falar sobre a minha carreira no Tênis de mesa, começei em 2021 e continuo até
+                hoje.Participei do jem e 2 torneios e tenho um carinho pelo torneio que joguei  na arena multiuso que fiquei entre os 16 melhores. 
+                pelo colégio Sepam.
+            </p>
+        </div>
+
+        <div class="grid-item item2">2
+            <p>Meus contatos são:Email:joaodecarvalhopradk@gmail.com. Número:999162-1552</p>
+        </div>
+
+
+        <div class="grid-item header">3
+            <p>Sou estudante do colégio Sepam a 3 anos estou no 8° ano e minhas matérias favoritas são: história e
+                matemática.</p>
+        </div>
+
+        <div class="grid item navegacao" id="PROJETOS">4
+            <p>Meus projetos futuros são:comprar um computador(de preferencia notebook) potente, passar de
+                ano(importante)
+                me dedicar mais no tênis de mesa(lazer).</p>
+        </div>
+    </div>
+
+    <h1 id="historia">HISTÓRIA</h1>
+    <p>Nasci no dia 24/05/2010, meu nome completo é João Felipe de carvalho do Prado, tenho pais separados minha
+        guarda e de minha irmã são compartilhadas e temos liberdade de escolhermos onde ficar.
+        Desde pequeno gostava bastante da área de computação, hoje faço um curso de programação na odonto excellence
+        com ótimos professores e tenho bons colegas ao meu lado.
+        Sou muito curioso sobre desastres que aconteceram na história do mundo(como o Titanic e o 11 de setembro).
+        Nunca passei necessidade na vida nem os meus pais.
+       Minhas bandas favoritas são: Guns n Roses e Hoovaranas.
+       E por fim tenho 3 gatos.
+    </p>
+    
+    <div class="grid-container">
+        <div class="grid-item item1" >1
+            <img src="unnamed.png" width="450" height="205">
+              
+        </div>
+
+        <div class="grid-item item2">2
+           
+        </div>
+
+
+        <div class="grid-item header">3
+            
+        </div>
+
+        <div class="grid item navegacao" >4
+            
+        </div>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .item1 {
+            grid-area: apresentaçao;
+        }
+
+        .item2 {
+            grid-area: cursos;
+        }
+
+        .item3 {
+            grid-area: escolaridade;
+        }
+
+        .item4 {
+            grid-area: eventos;
+        }
+
+        .item5 {
+            grid-area: planos;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'apresentaçao apresentaçao cursos'
+                'escolaridade eventos cursos'
+                'planos planos planos';
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-container>div {
+            background-color: #003366;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .grid-container>div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .grid-container>div h1 {
+            margin-bottom: 10px;
+        }
+
+        .grid-container>div span {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-areas:
+                    'apresentaçao'
+                    'cursos'
+                    'escolaridade'
+                    'eventos'
+                    'planos';
+            }
+        }
+
+        @media screen and (max-width: 436px) {
+            .grid-container>div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <h1>apresentação</h1>
+            <span>olá! eu me chamo João e sou um estudante dedicado, apaixonado por aprender e crescer academicamente.
+                Meu portfólio reflete minha paixão pelo aprendizado, projetos acadêmicos e habilidades desenvolvidas.
+                Estou pronto para enfrentar desafios e contribuir para minha área de estudo. Estou animado para explorar
+                oportunidades de aprendizado e desenvolvimento contínuo.</span>
+        </div>
+        <div class="item2">
+            <h1>cursos</h1>
+            <span>Possuo sólidos conhecimentos em cursos de programação e fluência em inglês, habilidades essenciais
+                para minha área de estudo. Meu portfólio reflete meu comprometimento em buscar conhecimentos atualizados
+                e aprimorar minhas habilidades técnicas. Além disso, meu domínio do idioma inglês me permite comunicar e
+                colaborar efetivamente em um ambiente global. Estou entusiasmado para aplicar essas habilidades e
+                contribuir de forma significativa em minha área de atuação.</span>
+        </div>
+        <div class="item3">
+            <h1>escolaridade</h1>
+            <span>Atualmente, estou cursando o 7° ano no Sagrada Família. Estou empenhado em obter uma
+                base sólida de conhecimentos em diversas disciplinas e desenvolver habilidades essenciais para meu
+                futuro acadêmico e profissional. Meu foco é aproveitar ao máximo essa fase da minha educação, buscando
+                constantemente o crescimento intelectual e pessoal.</span>
+        </div>
+        <div class="item4">
+            <h1>atividades extracurriculares</h1>
+            <span>Além dos estudos, dedico parte do meu tempo a participar de competições acadêmicas de destaque, como
+                as Olimpíadas Brasileiras de Matemática das Escolas Públicas (OBMEP) e a Olimpíada Pontagrossense de
+                Matemática (OPMAT). Tive a oportunidade de representar minha escola em diversas edições dessas
+                competições, o que me permitiu desenvolver habilidades matemáticas avançadas e colocar em prática meu
+                raciocínio lógico. Além disso, também participei dos Jogos Escolares Municipais (JEM), onde pude
+                competir em modalidades esportivas, fortalecer meu espírito de equipe e desenvolver habilidades físicas.
+                Essas experiências extracurriculares têm sido enriquecedoras, proporcionando um aprendizado complementar
+                e uma visão mais ampla do meu desenvolvimento acadêmico.
+            </span>
+        </div>
+        <div class="item5">
+            <h1>planos futuros</h1>
+            <span>Olhando para o futuro, tenho grandes planos e ambições para minha carreira acadêmica e profissional.
+                Pretendo ingressar em uma instituição de ensino superior de renome, onde poderei aprofundar meus
+                conhecimentos e explorar minha área de estudo com maior profundidade. Além disso, desejo continuar
+                participando de competições acadêmicas, expandindo meu conhecimento e representando minha escola em
+                níveis estadual e nacional. Tenho como objetivo contribuir para o avanço do conhecimento em minha área
+                de interesse por meio de pesquisas e projetos inovadores. Também busco oportunidades de estágio e
+                experiências profissionais que me permitam aplicar meus conhecimentos teóricos na prática e desenvolver
+                habilidades práticas essenciais. Com determinação e perseverança, estou confiante de que alcançarei meus
+                objetivos e farei contribuições significativas em minha área de atuação.
+            </span>
+        </div>
+    </div>
+main
+</body>
+
+</html>
