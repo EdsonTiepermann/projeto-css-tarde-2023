@@ -3,8 +3,8 @@
 <head>
 <style>
     .bg{
-        background-image: url(1684327333839.jpg);
-        background-size: auto;
+        background-image: url(Sem-título.jpg);
+        background-size: contain;
     }
     .titulos{
     font-size: large;
@@ -24,6 +24,35 @@
     padding: 20px;
     text-align: center;
     }
+    .links{
+    text-align: center;
+    }
+    .links-cor{
+    color: rgb(255, 255, 255);
+    }
+    @media only screen and (max-width: 768px) {
+    .links{
+        background-color: aqua;
+    }
+.grid-container-th{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 500px;
+    background-image: url(Sem-título.jpg);
+    background-size: contain;
+}
+    .container > div > img {  
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;
+    }
+
+    .bg{
+        background-image: url(Sem-título.jpg);
+        /* background-size: 50px 50px; */
+    }
+}
 </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,20 +62,28 @@
     <h1 class="titulos">Nascimento</h1>
     <br>
     <div class="grid-container-g">
-        <div class="grid-item"> Nasci em Catro Paraná no ano de 2002, cresci e aos 20 anos de idade vim morar em Ponta Grossa, cidade próxima. 
-            Vim a trabalho e a estudos, tive que aprender a criar independência. 
-            Atualmente estou trabalhando no setor de Help desk na Odonto Excellence, mas já trabalhei com Marketing na mesma empresa, para quem não sabe
-            o seto de help ele é um suporte ao cliente, aonde atendemos chamados de todas as clinicas do CEO Oseias Gomes. 
-            Estou entrando no último período da faculdade de Engenharia de Software, foram 4 anos, de luta, choro, pedidos de socorro haha. 
-            Ainda não tenho certeza 
-        </div>
+        <div class="grid-item">Nasci em Catro (Famosa cidade do leite), no dia 16 de Fevereiro do ano de 2002</div>
     </div>
     <br>
-    <h1>Infância e adolescência</h1>
+    <h1 class="titulos">Infância e adolescência</h1>
     <br>
     <div class="grid-container-g">
-        <div class="grid-item"></div>
+        <div class="grid-item">Estudei no colegio Sesi por 6/7 meses mais o menos, onde descidi ir para um colégio público por conta do esporte(vôlei),
+            sempre gostei muito de práticar esportes, conclui meu ensino médio e sempre gostei de fazer trabalhos como modelo.
+            No final do ano de 2019, fui selecionada para ir para São Paulo para aprovação de uma agencia de lá, sempre gostei talvez hobbie.</div>
     </div>
-    
+    <br>
+    <h1 class="titulos">Vida adulta</h1>
+    <div class="grid-container-g">
+        <div class="grid-item"> Curso Engenharia de Software, estou no indo para o sétimo período, e me decidindo qual aréa seguir, como disse em uma breve descrição
+            gosto bastante da parte de documentação do Software, da reengenharia que é uma forma de manutenção do Software (corrige erros, Software mal feito,otimização de um Software legado (antigo)).
+            Penso em fazer metrado na aréa de Qualidade de Software, mas também não descarto a ideia de ser uma programadora, que inclusive exige dedicação e empenho para aprender.
+        </div>
+    </div>    
+    <br>
+    <br>
+    <nav class="links">
+        <a class="links-cor" href="main-page.html">Página inicial</a>
+    </nav>
 </body>
 </html>
