@@ -21,6 +21,14 @@ header {
   font-style: italic;
 }
 
+.my-name a {
+  color: white;
+}
+
+header:hover {
+  font-size: 1.6em;
+}
+
 .nav-bar {
   height: 80px;
   padding-top: 180px;
@@ -48,7 +56,17 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+li:hover {
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
 ul {
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -87,6 +105,11 @@ p::first-letter {
   border: 3px solid blueviolet;
 }
 
+.speaking:hover {
+  width: 75px;
+  height: 75px;
+}
+
 .container-grid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -102,6 +125,12 @@ p::first-letter {
   border: 3px solid blueviolet;
   align-items: center;
   cursor: pointer;
+}
+
+.format-images:hover {
+  width: 260px;
+  height: 260px;
+  border: 3px solid blue;
 }
 
 #position-article {
@@ -125,8 +154,13 @@ footer {
   color: white;
   padding-top: 20px;
   text-align: center;
-  font-size: 1em;
-  font-family: s;
+  font-size: 20px;
+}
+
+.icones-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
 }
 
 #contact {

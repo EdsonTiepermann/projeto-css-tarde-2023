@@ -9,31 +9,31 @@
   <body>
     <header>
       <h1 class="my-name">
-        <strong><i>Iago</i></strong>
+        <strong><i><a href="#top-page">Iago</a></i></strong>
       </h1>
       <h2 class="my-name">
-        <strong><i>Gonçalves</i></strong>
+        <strong><i><a href="#top-page">Gonçalves</a></i></strong>
       </h2>
     </header>
     <nav>
-      <ul class="nav-bar">
-        <li>Sobre</li>
-        <li>Histórico Acadêmico e Profissional</li>
-        <li>Principais Empresas</li>
-        <li>Portifólio Desenvolvimento Web</li>
-        <li>Fale Comigo</li>
+      <ul id="top-page" class="nav-bar">
+        <li><a href="">Sobre</a></li>
+        <li><a href="#study">Histórico Acadêmico e Profissional</li></a>
+        <li><a href="#main-job">Principais Empresas</a></li>
+        <li><a href="#portifolio">Portifólio Desenvolvimento Web</a></li>
+        <li><a href="#talk-to-me">Fale Comigo</a></li>
       </ul>
-    </nav>
-    <main>
+    </nav>    
+    <main id="study">
       <div class="position-speaking">
         <img class="speaking" src="images/perfil.jpeg" alt="perfil-photo" />
-        <p style="padding-top: 15px;">Olá, eu sou Iago. Um entusiasta em gestão e tecnologia.
-          Sou formado em Administração de Empresas pela Unisecal e pós graduado em Planejamento
+        <p style="padding-top: 15px;">Olá, eu sou Iago. Um entusiasta em gestão e tecnologia.       
+            Sou formado em Administração de Empresas pela Unisecal e pós graduado em Planejamento
           e Gestão de Negócios. Atuo como Gerente de Relacionamentos na Odonto
           Excellence Franchising e estudo Desenvolvimento de Software Web (promovido pela empresa).
           Em meu tempo livre desenvolvo projetos como forma de estudo e freelancer.
         </p>
-        <p style="padding-top: 15px;">Nos cards a seguir algumas empresas o qual me moldaram como profissional.</p>        
+        <p id="main-job"  style="padding-top: 15px;">Nos cards a seguir algumas empresas o qual me moldaram como profissional.</p>        
       </div>
       <section class="container-grid">
         <img class="format-images" src="/iago/images/odonto-excellence.jpg" alt="Odonto-Excellence" />
@@ -42,7 +42,7 @@
       </section>
       <div class="position-speaking">
         <img class="speaking" src="images/perfil.jpeg" alt="perfil-photo" />
-        <p style="padding-top: 15px;">A seguir os três principais projetos autais de desenvolvimento de software
+        <p id="portifolio" style="padding-top: 15px;">A seguir os três principais projetos autais de desenvolvimento de software
           web, desenvolvidos, os quais mantenho melhoria continua e evolução.
         </p>
       </div>
@@ -55,22 +55,23 @@
         <div class="position-speaking">
           <img class="speaking" src="images/perfil.jpeg" alt="perfil-photo" />
           <p style="padding-top: 15px; padding-bottom: 20px;">Clic no card para ver meus próximos planos!</p>
-          <div id="format-card"><a href="https://docs.google.com/document/d/1qfaIHHLDVOg2IvKBcZYPDMRQPNAwGWk2Nl3OfjYEhbo/edit">
+          <div id="format-card">
+            <!-- <a href="https://docs.google.com/document/d/1qfaIHHLDVOg2IvKBcZYPDMRQPNAwGWk2Nl3OfjYEhbo/edit"> -->
             <img class="format-images" src="images/interrogacao.jpg" alt="interrogacao"></img></a>
         </div>    
         </div>   
     </main>
-    <footer>
+    <footer id="talk-to-me">
       <h3 class="my-name">
         <strong><i>Iago Gonçalves</i></strong>
       </h3>
       <p>Fale comigo</p>
       <address>
         <ul id="contact">
-          <li>LinkedIn</li>
-          <li>GitHub</li>
-          <li>Instagram</li>
-          <li>WhatsApp</li>
+          <li><img class="icones-img" src="/iago/images/linkedin.png" alt=""></li>
+          <li><img class="icones-img" src="/iago/images/github.png" alt=""></li>
+          <li><img class="icones-img" src="/iago/images/instagram.png" alt=""></li>
+          <li><img class="icones-img" src="/iago/images/whatsapp.png" alt=""></li>
         </ul>
       </address>
     </footer>
