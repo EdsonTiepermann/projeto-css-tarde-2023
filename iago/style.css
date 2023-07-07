@@ -32,9 +32,15 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(90deg, #e47a7e, #ad76bc 33%, #8380f4 71%, #a6a5ec);
+  background-image: linear-gradient(
+    90deg,
+    #e47a7e,
+    #ad76bc 33%,
+    #8380f4 71%,
+    #a6a5ec
+  );
   color: #999;
-  font-size: 25px;
+  font-size: 27px;
   line-height: 64px;
   text-align: center;
   white-space: normal;
@@ -44,6 +50,27 @@ header {
 }
 ul {
   text-decoration: none;
+}
+
+p::first-letter {
+  /* Use :first-letter if você precise muito de compatibilidade com IE 8 */
+  background-image: linear-gradient(
+    90deg,
+    #e47a7e,
+    #ad76bc 33%,
+    #8380f4 71%,
+    #a6a5ec
+  );
+  color: #999;
+  font-size: 27px;
+  line-height: 64px;
+  text-align: center;
+  white-space: normal;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 130%;
 }
 
 .position-speaking {
@@ -58,7 +85,7 @@ ul {
   height: 70px;
   border-radius: 100px;
   border: 3px solid blueviolet;
-}  
+}
 
 .container-grid {
   display: grid;
@@ -82,7 +109,7 @@ ul {
   padding-bottom: 20px;
 }
 
-#format-card {  
+#format-card {
   display: grid;
   justify-content: center;
   text-align: center;
