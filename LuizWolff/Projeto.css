@@ -18,32 +18,20 @@ header {
     grid-gap: 20px;
     padding: 20px;
     grid-template-areas:
-        "grid-item1 grid-item1"
-        "grid-item2 grid-item3"
+        'grid-item1 grid-item1'
+        'grid-item2 grid-item3'
     ;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .grid-container {
         grid-template-areas:
-            "grid-item1 grid-item1"
-            'grid-item2 grid-item3';
+            'grid-item1'
+            'grid-item2'
+            'grid-item3';
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .grid-container {
-        grid-template-areas:
-            "grid-item1 grid-item1"
-            "grid-item2" "grid-item3";
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .grid-item3 {
-        padding: 20px;
-    }
-}
 
 
 .grid-item1 {
@@ -124,12 +112,6 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.img-container {
-    text-align: center;
-    border-radius: 50%;
-    width: 230px;
-    height: 200px;
-}
 
 details {
     text-align: center;
