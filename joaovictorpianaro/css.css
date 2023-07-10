@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+.item1 {
+    grid-area: apresentacao;
+}
+
+.item2 {
+    grid-area: cursos;
+}
+
+.item3 {
+    grid-area: escolaridade;
+}
+
+.item4 {
+    grid-area: eventos;
+}
+
+.item5 {
+    grid-area: planos;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'menu menu menu'
+        'apresentacao apresentacao cursos'
+        'escolaridade eventos cursos'
+        'planos planos planos';
+    gap: 20px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+.grid-container>div {
+    background-color: #003366;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.grid-container>div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.grid-container>div h1 {
+    margin-bottom: 10px;
+}
+
+.grid-container>div span {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            'menu'
+            'apresentacao'
+            'cursos'
+            'escolaridade'
+            'eventos'
+            'planos';
+    }
+}
+
+body {
+    background-color: black;
+    font-family: 'Courier Prime', monospace;
+    color: white;
+    background: linear-gradient(to bottom, midnightblue, purple, black);
+}
+
+header {
+    background-color: #003366;
+    padding: 10px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: lightblue;
+}
+
+footer {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #003366;
+    margin-top: 50px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+footer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+header {
+    display: flex;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: #003366;
+    ;
+
+}
+
+button {
+    background-color: #003366;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    height: 40px;
+}
