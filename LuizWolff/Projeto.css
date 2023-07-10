@@ -27,6 +27,7 @@ header {
     .grid-container {
         grid-template-areas:
             'grid-item1'
+            'grid-item1'
             'grid-item2'
             'grid-item3';
     }
@@ -35,7 +36,6 @@ header {
 
 
 .grid-item1 {
-    height: 400px;
     /* background-color: #f1f1f1; */
     padding: 20px;
     color: rgb(47, 255, 0);
@@ -50,7 +50,7 @@ header {
 }
 
 .grid-item2 {
-    height: 400px;
+
     background-color: #f1f1f1;
     padding: 20px;
     color: rgb(47, 255, 0);
@@ -64,7 +64,6 @@ header {
 }
 
 .grid-item3 {
-    height: 90%;
     padding: 20px;
     color: rgb(47, 255, 0);
     border: 10px solid rgb(42, 212, 4);
@@ -96,6 +95,12 @@ header {
 
 p {
     text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+p:hover{
+    transform: translate(-20px);
+    
 }
 
 
