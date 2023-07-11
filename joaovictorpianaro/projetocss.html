@@ -5,111 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-
-        .item1 {
-            grid-area: apresentaçao;
-        }
-
-        .item2 {
-            grid-area: cursos;
-        }
-
-        .item3 {
-            grid-area: escolaridade;
-        }
-
-        .item4 {
-            grid-area: eventos;
-        }
-
-        .item5 {
-            grid-area: planos;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-                'apresentaçao apresentaçao cursos'
-                'escolaridade eventos cursos'
-                'planos planos planos';
-            gap: 20px;
-
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            background: linear-gradient(to bottom, midnightblue, purple, black);
-
-        }
-
-        .grid-container>div {
-            background-color: #003366;
-            text-align: center;
-            font-size: 25px;
-            color: white;
-            padding: 20px;
-            transition: transform 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-
-
-        }
-
-        .grid-container>div:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .grid-container>div h1 {
-            margin-bottom: 10px;
-        }
-
-        .grid-container>div span {
-            font-size: 18px;
-        }
-
-        @media (max-width: 768px) {
-            .grid-container {
-                grid-template-areas:
-                    'apresentaçao'
-                    'cursos'
-                    'escolaridade'
-                    'eventos'
-                    'planos';
-            }
-        }
-
-        body {
-            background-color: black;
-            font-family: 'Courier Prime', monospace;
-            color: white;
-        }
-
-        footer {
-            text-align: center;
-            border-radius: 10px;
-            background-color: #003366;
-        }
-
-        footer:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease;
-        }       
-    </style>
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
+    <header>
+        <ul class="menu">
+            <li><button><a href="#apresentacao">Apresentação</a></button></li>
+            <li><button><a href="#cursos">Cursos</a></button></li>
+            <li><button><a href="#escolaridade">Escolaridade</a></button></li>
+            <li><button><a href="#eventos">Atividades Extracurriculares</a></button></li>
+            <li><button><a href="#planos">Planos Futuros</a></button></li>
+        </ul>
+
+    </header>
+
     <div class="grid-container">
-        <div class="item1">
+        <div class="item1" id="apresentacao">
             <h1>apresentação</h1>
             <span>olá! eu me chamo João e sou um estudante dedicado, apaixonado por aprender e crescer academicamente.
                 Meu portfólio reflete minha paixão pelo aprendizado, projetos acadêmicos e habilidades desenvolvidas.
                 Estou pronto para enfrentar desafios e contribuir para minha área de estudo. Estou animado para explorar
                 oportunidades de aprendizado e desenvolvimento contínuo.</span>
         </div>
-        <div class="item2">
+        <div class="item2" id="cursos">
             <h1>cursos</h1>
             <span>Possuo sólidos conhecimentos em cursos de programação e fluência em inglês, habilidades essenciais
                 para minha área de estudo. Meu portfólio reflete meu comprometimento em buscar conhecimentos atualizados
@@ -117,14 +36,14 @@
                 colaborar efetivamente em um ambiente global. Estou entusiasmado para aplicar essas habilidades e
                 contribuir de forma significativa em minha área de atuação.</span>
         </div>
-        <div class="item3">
+        <div class="item3" id="escolaridade">
             <h1>escolaridade</h1>
             <span>Atualmente, estou cursando o 7° ano no Sagrada Família. Estou empenhado em obter uma
                 base sólida de conhecimentos em diversas disciplinas e desenvolver habilidades essenciais para meu
                 futuro acadêmico e profissional. Meu foco é aproveitar ao máximo essa fase da minha educação, buscando
                 constantemente o crescimento intelectual e pessoal.</span>
         </div>
-        <div class="item4">
+        <div class="item4" id="eventos">
             <h1>atividades extracurriculares</h1>
             <span>Além dos estudos, dedico parte do meu tempo a participar de competições acadêmicas de destaque, como
                 as Olimpíadas Brasileiras de Matemática das Escolas Públicas (OBMEP) e a Olimpíada Pontagrossense de
@@ -134,9 +53,8 @@
                 competir em modalidades esportivas, fortalecer meu espírito de equipe e desenvolver habilidades físicas.
                 Essas experiências extracurriculares têm sido enriquecedoras, proporcionando um aprendizado complementar
                 e uma visão mais ampla do meu desenvolvimento acadêmico.
-            </span>
         </div>
-        <div class="item5">
+        <div class="item5" id="planos">
             <h1>planos futuros</h1>
             <span>Olhando para o futuro, tenho grandes planos e ambições para minha carreira acadêmica e profissional.
                 Pretendo ingressar em uma instituição de ensino superior de renome, onde poderei aprofundar meus
@@ -158,14 +76,14 @@
                     target="_blank">
                     <img src="Sem título.jpg" alt="" width="50px" height="50px">
                 </a>
-                <a href="https://www.youtube.com/@batatacelestial7443">
-                    <img src="1384060.png" alt="" width="50px" height="50px" target="_blank">
+                <a href="https://www.youtube.com/@batatacelestial7443" target="_blank">
+                    <img src="1384060.png" alt="" width="50px" height="50px">
                 </a>
                 <a href="https://github.com/joaopianaro" target="_blank">
                     <img src="github-6980894_1280.webp" alt="" height="50px" target="_blank">
                 </a>
             </div>
-            <span>Ponta Grossa - 03/07/2023</span>
+            <span>Ponta Grossa - 03/07/2023 | meu telefone:+55 42 98891-3572</span>
         </footer>
     </div>
 </body>
