@@ -1,59 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Minha Landing Page</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-y+hoR7tbT1Yyk+mqT6QPhCjubQizywIR9eCtqgWOFN7Tm0L4Qz28OVXuDNXvWGoM7GW4uWANFp42zOzgQVvbrA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="img/logox.png">
+  <title>Davi Cortelete</title>
 </head>
 <body>
-  <!-- Cabeçalho da página -->
-  <header>
-    <nav>
-      <!-- Menu de navegação responsivo -->
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Conteúdo principal da página -->
   <main>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <p>DAVI CORTELETE</p>
+      </div>
+      <div class="menu">
+        <nav class="nav-list">
+            <a href="#home">Home</a>
+            <a href="#exp">Experiência</a>
+            <a href="#projeto">Projetos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>  
+    <!-- HOME -->
     <section id="home">
-      <!-- Imagem de destaque -->
-      <img src="imagem.jpg" alt="Imagem de destaque">
-      <!-- Título e texto de introdução -->
-      <h1>Bem-vindo à minha Landing Page</h1>
-      <p>Esta é uma página de exemplo criada com um estilo semelhante ao site da Apple.</p>
+      <div class="home-info">
+        <h2>Olá, sou Davi Cortelete</h2>
+        <span class="home-position">
+          <h3>Suporte Técnico Odonto Excellence</h3>
+        </span>
+        <span class="home-resume">
+          <p>Atualmente faço parte do Suporte Técnico da Odonto Excellence, onde utilizo minhas habilidades técnicas e interpessoais para atender aos clientes. 
+            Também sou brigadista certificado, contribuindo para a segurança da empresa. 
+            Estou cursando Engenharia de Software e realizando um curso de Programação para aprimorar ainda mais minhas habilidades nessa área.
+          </p>
+        </span>
+        <button>
+          <a href="#contato">Contate-me</a>
+        </button>
+      </div>
+      <div class="home-img">
+        <img src="./img/logox.png" alt="Foto de perfil">
+      </div>
     </section>
-
-    <section id="sobre">
-      <!-- Título e texto sobre a empresa/produto/serviço -->
-      <h2>Sobre nós</h2>
-      <p>Somos uma empresa especializada em criar soluções incríveis para nossos clientes.</p>
-    </section>
-
-    <section id="contato">
-      <!-- Formulário de contato -->
-      <h2>Entre em contato conosco</h2>
-      <form action="enviar.php" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem"></textarea><br><br>
-
-        <input type="submit" value="Enviar">
-      </form>
-    </section>
-  </main>
-
-  <!-- Rodapé da página -->
+    <!-- EXPERIENCIA -->
+    <section id="exp">
+      <h2>Trabalhos e Experiências</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="exp-img">
+              <img src="./img/foto.jpg" alt="Foto Autoral - Jericoacoara">
+            </div>
+            <div class="exp-info">
+              <h2>Fotografia e Cinegrafia</h2>
+              <p>Parcerias Realizadas</p>
+              <ul>
+                <li>Coca-Cola</li>
+                <li>Carnaval Eletrônico com Alok</li>
+                <li>Katy Perry</li>
+                <li>Teatro Guaíra</li>
+                <li>Pedreira Paulo Leminski</li>
+                <li>ClicStory+</li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="exp-img">
+              <img src="./img/foto2.jpg" alt="Foto de uma loja online">
+            </div>
+            <div class="exp-info">
+              <h2>Designs e Mockups</h2>
+              <p>Conteúdo para Mídia Social e Merch</p>
+              <ul>
+                <li>Estampas de produtos e camisetas</li>
+                <li>Criações pessoais e empresariais</li>
+                <li>Edição de VT - Rede Record</li>
+                <li>Thumbnails para Youtube</li>
+                <li>Conteúdo para Redes Sociais</li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="exp-img">
+              <img src="./img/detailer.jpg" alt="Foto meramente ilustrativa sobre AutoDetail">
+            </div>
+            <div class="exp-info">
+              <h2>Gerente Técnico de Limpeza Automobilística</h2>
+              <p>Com especialização em restauração e recuperação de carros e barcos</p>
+            </div>
+          </div>
+        </div>
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+    <!-- PROJETO -->
+    <section id="projeto">
+      <h2>Projetos</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="projeto-img">
+              <img src="./img/int.png" alt="Foto de um site">
+            </div>
+            <div class="projeto-info">
+              <h2>Inteligência Artificial</h2>
+              <p>Desenvolvimento de Prompts e criação de Arte Digital</p>
+              <ul>
+                <li>Mídias Digitais</li>
+                <li>Vídeos e produções</li> 
+                <li>Estratégia Financeira</li>
+                <li>Criação de contos e livros fantasia</li> 
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="projeto-img">
+              <img src="./img/foto3.jpg" alt="Foto de uma das lojas online">
+            </div>
+            <div class="projeto-info">
+              <h2>E-commerce</h2>
+              <p>Criação e desenvolvimento de lojas online e de produtos virais.</p>
+              <ul>
+                <li>Distribuição DropShipping</li>
+                <li>Brainstorming e Design de Produtos</li> 
+                <li>Estratégias de Marketing</li> 
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="projeto-img">
+              <img src="./img/grad.jpg" alt="Foto de um sistema">
+            </div>
+            <div class="projeto-info">
+              <h2>Graduações</h2>
+              <ul>
+                <li>Direito - PUCPR + Extensivo Penal Militar</li>
+                <li>Engenharia de Software - Unicesumar</li>
+                <li>Processos Gerenciais - IFPR</li>
+                <li>Marketing Digital - Google</li>
+                <li>Idioma Inglês - TOEFL + Cambridge University</li>
+                <li>Curso de Programação - Odonto Excellence</li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="exp-img">
+              <img src="./img/Firefit.jpg" alt="Foto de um sistema">
+            </div>
+            <div class="exp-info">
+              <h2>Apps e Criações</h2>
+              <p>Desenvolvimento de aplicativo jogável com instruções de saúde e planos de insentivo à utilização</p>
+            </div>
+          </div>
+        </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- Sobre -->
+  <section id="sobre">
+    <div class="home-info">
+      <h2>Sobre Davi Cortelete</h2>
+      <span class="home-position">Um pouco sobre mim:</span>
+      <span class="home-resume">
+        <p>
+          Desde 01 de dezembro de 1997
+        </p>
+        <p>
+          Minha jornada profissional tem sido diversificada, passando por diversas áreas ao longo dos anos. Comecei como fotógrafo e cinegrafista, registrando eventos renomados e participando de projetos para a Netflix. Em seguida, atuei como designer de mídia, desenvolvendo habilidades em design gráfico e produção de conteúdo visual impactante.
+        </p>
+        <p>
+          Em busca de conhecimento aprofundado, cursei Direito, especializando-me em Direito Penal Militar. Essa experiência proporcionou uma compreensão ampla das leis e regulamentos militares. Posteriormente, fui gerente técnico em uma empresa de detalhamento e restauração automotiva, aprimorando minhas habilidades de gestão e liderança.
+        </p>
+        <p>
+          Paralelamente, explorei os Processos Gerenciais e trabalhei como designer de estampas, expressando minha criatividade em roupas e acessórios. Atuei como criador de conteúdo digital e social media, desenvolvendo estratégias de marketing para marcas e empresas. Também tive experiência no entretenimento, atuando como ator e modelo.
+        </p>
+        <p>
+          Atualmente, faço parte do Suporte Técnico da Odonto Excellence, onde utilizo minhas habilidades técnicas e interpessoais para atender aos clientes. Além disso, sou brigadista certificado, contribuindo para a segurança da empresa. Estou cursando Engenharia de Software e realizando um curso de Programação, aprimorando minhas habilidades nessa área.
+        </p>
+        <p>
+          Neste portfólio, você encontrará uma seleção dos meus projetos mais relevantes, demonstrando minha versatilidade e dedicação. Estou animado para compartilhar minha jornada profissional e as habilidades desenvolvidas. Vamos explorar juntos as possibilidades e criar algo extraordinário!
+        </p>
+      </span>
+    </div>
+    <div class="sobre-img">
+      <img src="./img/perfil4.jpeg" alt="Foto de perfil">
+    </div>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Digite seu nome" />
+      <input type="email" placeholder="Digite seu e-mail" />
+      <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+      <button class="button">Enviar</button>
+    </form>
+  </section>
   <footer>
-    <p>&copy; Minha Empresa - Todos os direitos reservados.</p>
+    <p>© 2023 Davi Cortelete. Todos os direitos reservados.</p>
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com/davicortelete"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.twitter.com/davicortelete"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/davicortelete"><i class="fab fa-instagram"></i></a></li>
+    </ul>
   </footer>
+  </main>  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
+</html> 
