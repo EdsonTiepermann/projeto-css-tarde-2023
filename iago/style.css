@@ -71,7 +71,6 @@ a {
 }
 
 p::first-letter {
-  /* Use :first-letter if você precise muito de compatibilidade com IE 8 */
   background-image: linear-gradient(
     90deg,
     #e47a7e,
@@ -173,21 +172,18 @@ footer {
 
 @media only screen and (max-width: 1250px) {
   .nav-bar {
-    /* font-size: 25px; */
     height: 100px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .nav-bar {
-    /* font-size: 22px; */
     height: 140px;
   }
 }
 
 @media only screen and (max-width: 960px) {
   .nav-bar {
-    /* font-size: 19px; */
     height: 160px;
   }
 }
